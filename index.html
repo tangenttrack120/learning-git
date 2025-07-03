@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Richard Fadhilah">
         <meta name="description" content="think about it">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>28-06-2025: HTML & CSS</Title>
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -16,14 +17,14 @@
                 <ul class="nav">
                     <li><a href="#html">HTML</a></li>
                     <li><a href="#css">CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
                     <li><a href="#contactMe">Contact Me</a></li>
                     <li><a href="#aboutMe">About Author</a></li>
                 </ul>
             </nav>
         </header>
         <hr>
-        <main>
-            
+        <main> 
             <article id="html">
                 <h2>HTML</h2>
                 <p>HTML stands for Hyper text Markup Languange, is a standart markup languange to describe the sructure of documents displayed on the web.</p>
@@ -302,7 +303,7 @@
                             </tr>
                             <tr>
                                 <td>"class"</td>
-                                <td>class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</td>
+                                <td>class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name. You can add more than one class in an element just type class="class1 class2 class3".</td>
                             </tr>
                             <tr>
                                 <td>"id"</td>
@@ -347,15 +348,92 @@
             <article id="css">
                 <h2>CSS</h2>
                 <p>I haven't review much about CSS but I'll describe what I've learned today. CSS stands for Cascading style sheets. We use it to style the HTML like change the text color, how the page look, and much more</p>
-                <h3>How to link CSS and HTML</h3>
-                <p>In head section of the html use link to link it. Inside the link use rel to tell the relation of the CSS document to HTML document. Use href to make a reference to the CSS file location. Last, use type to detail the type of document you've imported to the HTML file.</p>
-                <table>
-                    <tr>
-                        <td>
+                <section>
+                    <h3>How to link CSS and HTML</h3>
+                    <p>In head section of the html use link to link it. Inside the link use rel to tell the relation of the CSS document to HTML document. Use href to make a reference to the CSS file location. Last, use type to detail the type of document you've imported to the HTML file.</p>
+                    <table>
+                        <tr>
+                            <td>
                             &lt;link rel="stylesheet" href="the CSS file location" type="text/css&gt;
-                        </td>
-                    </tr>
-                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>CSS Selectors</h3>
+                    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors into five categories: 
+                    <ul>
+                    <li>Simple selectors (select elements based on name, id, class).</li>
+                    <li>Combinator selectors (select elements based on a specific relationship between them).</li>
+                    <li>Pseudo-class selectors (select elements based on a certain state).</li>
+                    <li>Pseudo-elements selectors (select and style a part of an element).</li>
+                    <li>Attribute selectors (select elements based on an attribute or attribute value).</li></ul>
+                    This section will explain the most basic CSS selectors.
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                            The CSS element Selector
+                            </td>
+                            <td>
+                            element {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            The CSS id Selector
+                            </td>
+                            <td>
+                            #id {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                            The CSS class Selector
+                            </td>
+                            <td>
+                            .class {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            element.class {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            The CSS Universal Selector
+                            </td>
+                            <td>
+                            * {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            The CSS Grouping Selector
+                            </td>
+                            <td>
+                            element1, element2, element3 {<br>text-align: center;<br>color: red;<br>}
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>How to make comment</h3>
+                    <p>Comment will eventually come in handy when you want to make a pseudo code. Like what you'll do the next day with the code. Remind you to fix a bug etc. This is how you'll write comments in CSS:</p>
+                    <table>
+                        <tr>
+                            <td>
+                            /* comments */
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            <br>
+            <hr>
+            <article id="javascript">
+                <h2>JavaScript</h2>
             </article>
             <br>
             <hr>
