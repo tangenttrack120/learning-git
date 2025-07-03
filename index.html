@@ -1,30 +1,400 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <header>
-        <!--navbar and heading of the doc-->
-        <nav>
-            <ul>
-                <li><a href="#first">first</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="first">
-            <h2>article</h2>
-        </article>
-        <!--the main-->
-    </main>
-    <footer>
-        <!--contact-->
-    </footer>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Richard Fadhilah">
+        <meta name="description" content="think about it">
+        <Title>28-06-2025: HTML & CSS</Title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <h1>What I've learned Today</h1>
+            <nav aria-label="primary-navigation">
+                <ul class="nav">
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                    <li><a href="#aboutMe">About Author</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            
+            <article id="html">
+                <h2>HTML</h2>
+                <p>HTML stands for Hyper text Markup Languange, is a standart markup languange to describe the sructure of documents displayed on the web.</p>
+                <section>
+                    <h3>Some of the Code:</h3>
+                    <br>
+                    <table>
+                        <caption>Code</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Code Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;!DOCTYPE&gt;</td>
+                                <td>defines that this document is an HTML5 document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta&gt;</td>
+                                <td> meta element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings. The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta name="author" content="John Doe"&gt;</td>
+                                <td>Define the author of a page</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta charset="UTF-8"&gt;</td>
+                                <td>Define the character set used<td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</td>
+                                <td>Define keywords for search engines</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta name="description" content="Free Web tutorials"&gt;</td>
+                                <td>Define a description of your web page</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>&lt;meta http-equiv="refresh" content="30"&gt;</td>
+                                <td>Refresh document every 30 seconds</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</td>
+                                <td>Setting the viewport to make your website look good on all devices. This gives the browser instructions on how to control the page's dimensions and scaling. The "width=device-width" part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The "initial-scale=1.0" part sets the initial zoom level when the page is first loaded by the browser. You can see the difference of webpage using viewport meta tag, and didn't in <a href="https://www.w3schools.com/html/html_head.asp">W3school</a>.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;header&gt;</td>
+                                <td>defines a header for a document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;link&gt;</td>
+                                <td>Defines a link between a document and an external resource</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;script&gt;</td>
+                                <td>this element is used to define client-side JavaScripts.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;base&gt;</td>
+                                <td>Specify a default URL and a default target for all links on a page. <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base">see it here</a></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;title&gt;</td>
+                                <td>title is used to make the tab name.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;nav&gt;</td>
+                                <td>nav used as a navigation for the page you can use list to make a navigation.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ol&gt;</td>
+                                <td>this is an ordered list like 1,2,3 and something like that. with type="character" you can change the list item marker: "1" The list items will be numbered with numbers (default). "A"	The list items will be numbered with uppercase letters. "a"	The list items will be numbered with lowercase letters. "I"	The list items will be numbered with uppercase roman numbers. "i"	The list items will be numbered with lowercase roman numbers. By default, an ordered list will start counting from 1. If you want to start="number" counting from a specified number, you can use the start attribute</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt;</td>
+                                <td>this is unordered list. Like that dot that you see on that navbar. with style="list-style-type:name;" you can change the list item marker. "disc" Sets the list item marker to a bullet (default). "circle" Sets the list item marker to a circle."square" Sets the list item marker to a square. "none"	The list items will not be marked</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;li&gt;</td>
+                                <td>this is used to make a list on both unordered list and ordered list. you can use &lt;li href="reference"&gt; to make a navigation through out the page.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dl&gt;</td>
+                                <td>element to define a description list</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dt&gt;</td>
+                                <td>element to define the description term</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dd&gt;</td>
+                                <td>element to describe the term in a description list</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>this is an anchor tag. It used for links you can use &lt;a href="reference" download&gt;to make a download links,<br> &lt;a href="mailto:abc@gmail.com"&gt; to message using email but this method is not recommended,<br> &lt;a href="tel:+621234567890"&gt; to link a telephone number,<br> &lt;a href="absolute reference" target="_blank"&gt; to take user to a certain website in a new tab,<br> &lt;a href="/"&gt; to take user to home. you can learn more about target attribute below.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;br&gt;</td>
+                                <td>just imagine this like enter or return button when you make a document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;hr&gt;</td>
+                                <td>that straight line you see below the navbar. It used for separate content</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;pre&gt;</td>
+                                <td>defines preformatted text. text inside this tag will displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;em&gt;</td>
+                                <td><em>Emphasized text</em></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;b&gt;</td>
+                                <td><b>bold text</b></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;strong&gt;</td>
+                                <td><strong>Important text</strong></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;i&gt;</td>
+                                <td><i>Italic text</i></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;small&gt;</td>
+                                <td><small>Smaller text</small></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;del&gt;</td>
+                                <td><del>deleted text</del></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ins&gt;</td>
+                                <td><ins>inserted text</ins></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;sub&gt;</td>
+                                <td><sub>subscript text.</sub>See?</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;sup&gt;</td>
+                                <td><sup>Superscript text.</sup>See?</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;mark&gt;</td>
+                                <td><mark>Marked text</mark></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;abbr&gt;</td>
+                                <td><abbr title="oh my garlic!">OMG!</abbr><em>hover over it and stay still.</em> it's abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Marking abbreviations can give useful information to browsers, translation systems and search-engines. abbr use title to name it.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>defines the document body</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;article&gt;</td>
+                                <td>is semantic with clear topic</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;section&gt;</td>
+                                <td>what you'll use after article</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>a paragraph</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>element defines a division or a section in an HTML document. This element is often used as a container for other HTML elements. This element has no required attributes, but style, class and id are common. When used together with CSS, div element can be used to style blocks of content.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>element is an inline container used to mark up a part of a text, or a part of a document. this element has no required attributes, but style, class and id are common. When used together with CSS, span element can be used to style parts of the text.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;q&gt;</td>
+                                <td>tag defines a short quotation. Browsers normally insert quotation marks around the quotation. You'll use it inside paragraph.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>this tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;cite&gt;</td>
+                                <td>this tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).<br><b>Note:</b> A person's name is not the title of a work.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;bdo&gt;</td>
+                                <td>BDO stands for Bi-Directional Override. The bdo tag is used to override the current text direction:</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;!-- text --&gt;</td>
+                                <td>this is a comment.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;img&gt;</td>
+                                <td>this is how you load image to your page. You'll use "src" attribute not "href" attribute</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;map&gt;</td>
+                                <td>Defines an image map. to use this you must create name="mapName" attribute. Between opening and closing of the map tag declare area tag. Tis area tag will be used as the area of the map. To use map, you'll also need to declare usemap="#mapName" attribute to img tag.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;area&gt;</td>
+                                <td>element to define the clickable areas in the image map. You'll nest this inside map tag. You must define the shape of the clickable area, and you can choose one of these values: "rect" - defines a rectangular region. "circle" - defines a circular region. "poly" - defines a polygonal region. "default" - defines the entire region. <a href="https://www.w3schools.com/html/html_images_imagemap.asp" title="W3school: map and area">Learn more about it.</a> <td>
+                            </tr>
+                            <tr>
+                                <td>&lt;blockquote&gt;</td>
+                                <td>element defines a section that is quoted from another source. Use cite atrribute to cite a website.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;table&gt;</td>
+                                <td>a table, but you'll need CSS to make a proper table. <b>Note:</b> you'll learn about border, style, colspan, rowspan, padding, nth-child, and hover in CSS</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;caption&gt;</td>
+                                <td>This tag is used to make a title of the table. The "caption" tag should be inserted immediately after the "table" tag.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;colgroup&gt;</td>
+                                <td>This element is used to style specific columns of a table. element should be used as a container for the column specifications. this tag must be a child of a "table" element and should be placed before any other table elements, like "thead", "tr", "td" etc., but after the "caption" element, if present. There is only a very limited selection of CSS properties that are allowed to be used in the colgroup: "width property", "visibility property", "background properties", "border properties". All other CSS properties will have no effect on your tables.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;col&gt;</td>
+                                <td>You'll use this element inside the colgroup tag. Each group is specified with this element. The span attribute specifies how many columns get the style. The style attribute specifies the style to give the columns. If you want to style multiple columns with different styles, use more than one "col" element inside the "colgroup". If you want to style columns in the middle of a table, insert an "empty" col element (with no styles) for the columns before. You can hide columns with the visibility: collapse property.<td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>tr stands for table row. Inside this tag you'll write td tag to add cells.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;td&gt;</td>
+                                <td>td stands for table data. Basicaly a table cell. everything inside this tag is the content of the table cell.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;th&gt;</td>
+                                <td>stands for a table header cell in an HTML table. It is used to define headings for columns or rows within the table. Each th represents a table cell. these elements are typically bold and centered by default, providing semantic meaning to data and aiding accessibility for screen readers and other assistive technologies.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</td>
+                                <td>same like header, main, and footer but in a table</td>
+                            </tr>
+                            <tr>
+                                <td>"href"</td>
+                                <td>it's a reference attribute</td>
+                            </tr>
+                            <tr>
+                                <td>"src"</td>
+                                <td>img attribute to specifies the path to the image to be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>"width and height"</td>
+                                <td>an attribute of img to provide size information for images</td>
+                            </tr>
+                            <tr>
+                                <td>"alt"</td>
+                                <td>an attribute of img to provides an alternate text for an image if the image didn't load</td>
+                            </tr>
+                            <tr>
+                                <td>"style"</td>
+                                <td>attribute is used to add styles to an element, such as color, font, size, and more. you'll use 'style="property:value;"' format to use it.</td>
+                            </tr>
+                            <tr>
+                                <td>"lang"</td>
+                                <td>an attribute of html tag declares the language of the Web page</td>
+                            </tr>
+                            <tr>
+                                <td>"class"</td>
+                                <td>class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</td>
+                            </tr>
+                            <tr>
+                                <td>"id"</td>
+                                <td>specifies a unique id for an HTML element (the value must be unique within the HTML document). Different from "class", "id" can only be used by one element within the page. The id attribute is most used to point to a style in a style sheet, and by JavaScript (via the HTML DOM) to manipulate the element with the specific id.</td>
+                            </tr>
+                            <tr>
+                                <td>"rel"</td>
+                                <td>it's relationship between the current doc to linked doc</td>
+                            </tr>
+                            <tr>
+                                <td>"title" but as a attribute of a tag</td>
+                                <td>attribute defines some extra information about an element</td>
+                            </tr>
+                            <tr>
+                                <td>"target"</td>
+                                <td>this attribute to define where to open the linked document. Target have 4 value: "_self" - Default. Opens the document in the same window/tab as it was clicked. "_blank" - Opens the document in a new window or tab. "_parent" - Opens the document in the parent frame. "_top" - Opens the document in the full body of the window</td>
+                            </tr>
+                            <tr>
+                                <td>Hierarchy</td>
+                                <td>the text have it's own hierarchy &lt;h1&gt; is the heading of the text, &lt;h2&gt; is sub heading of &lt;h1&gt; and so on until &lt;h6&gt;. There must only be 1 &lt;h1&gt; in your text.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <aside>
+                                        <details>
+                                            <summary>
+                                                This is not the full tags of HTML. be sure to learn about other tags here.
+                                            </summary>
+                                            <p>full HTML Reference: <a href="https://www.w3schools.com/TAGS/default.asp" >W3school</a></p>
+                                        </details>
+                                    </aside>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </article>
+            <br>
+            <hr>
+            <article id="css">
+                <h2>CSS</h2>
+                <p>I haven't review much about CSS but I'll describe what I've learned today. CSS stands for Cascading style sheets. We use it to style the HTML like change the text color, how the page look, and much more</p>
+                <h3>How to link CSS and HTML</h3>
+                <p>In head section of the html use link to link it. Inside the link use rel to tell the relation of the CSS document to HTML document. Use href to make a reference to the CSS file location. Last, use type to detail the type of document you've imported to the HTML file.</p>
+                <table>
+                    <tr>
+                        <td>
+                            &lt;link rel="stylesheet" href="the CSS file location" type="text/css&gt;
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <br>
+            <hr>
+            <article id="contactMe">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Find a bug? Message me!</legend>
+                        <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" autocomplete="on" required>
+                    </p>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="6"
+                        placeholder="Type your message here"></textarea>
+                    <br>
+                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Richard Fadhilah</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+
+        </footer>
+    </body>
 </html>
