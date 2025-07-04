@@ -19,10 +19,35 @@ table, tr, td, caption {
     border-collapse: collapse;
     padding: 0.5rem;
 }
-.nav{
-    list-style-type: none;
-}
 
 caption:hover, tr:hover, td:hover{
     background-color: hsl(0, 0%, 30%);
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #232323;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
 }
