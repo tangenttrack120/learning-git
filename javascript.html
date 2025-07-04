@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Richard Fadhilah">
+        <meta name="description" content="think about it">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>CSS explanation</Title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>What I've learned Today</h1>
+            <nav aria-label="primary-navigation">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html.html#html">HTML</a></li>
+                    <li><a href="css.html#css">CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                    <li><a href="#aboutMe">About Author</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main> 
+            <article id="javascript">
+                <h2>JavaScript</h2>
+            </article>
+            <br>
+            <hr>
+            <article id="contactMe">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Find a bug? Message me!</legend>
+                        <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" autocomplete="on" required>
+                    </p>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="6"
+                        placeholder="Type your message here"></textarea>
+                    <br>
+                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Richard Fadhilah</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+
+        </footer>
+    </body>
+</html>
